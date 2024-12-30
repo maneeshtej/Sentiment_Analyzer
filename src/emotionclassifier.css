@@ -345,7 +345,8 @@ h1 {
         visibility: hidden;
         z-index: 9;
         transition: all 300ms ease-in-out;
-        overflow-y: scroll;
+        overflow: scroll;
+        padding-bottom: 20px;
     }
     
     .emotion-sample {
