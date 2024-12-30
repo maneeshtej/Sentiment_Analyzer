@@ -182,7 +182,7 @@ h1 {
     }
 
     .emotion-main-wrapper-transform {
-        transform: scale(0.7) translateY(-300px);
+        transform: scale(0.7) translateY(-200px) scale(0.6);
         width: 100vw;
         transition: all 500ms ease-in-out; 
     }
@@ -261,7 +261,21 @@ h1 {
         transition: all 500ms ease-in-out;
         align-items: center;
         justify-content: space-evenly;
-        transform: scale(0.7);
+        transform: scale(0.5);
+    }
+
+    .emotion-made-by {
+        position: absolute;
+        right: 50px;
+        text-justify: auto;
+        top: -300px;
+        transition: all 200ms ease-in-out;
+        font-size: 20px;
+    }
+    
+    .emotion-made-by-transform {
+        top: 10px;
+        transition: all 500ms ease-in-out;
     }
 }
 
