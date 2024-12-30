@@ -38,7 +38,7 @@ function EmotionClassifier() {
 
     try {
       const response = await axios.post(
-        " https://17da-103-246-193-34.ngrok-free.app",
+        "https://17da-103-246-193-34.ngrok-free.app/predict",
         {
           text: inputText,
         },
