@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playwrite+AU+VIC+Guides&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playwrite+AU+VIC+Guides&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+.emotion-made-by {
+    position: absolute;
+    right: 50px;
+    text-justify: auto;
+    top: -300px;
+    transition: all 200ms ease-in-out;
+    font-size: 40px;
+}
+
+.emotion-made-by-transform {
+    top: 10px;
+    transition: all 500ms ease-in-out;
+}
+.emotion-main-wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.emotion-main-wrapper-transform {
+    transform: scale(0.7) translateY(-500px) translateX(-750px);
+    width: 100vw;
+    transition: all 500ms ease-in-out; 
+}
+
+h1 {
+    font-family: "Playwrite IT Moderna", serif;
+    font-family: "Italianno", serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.emotion-textbox {
+    background-color: black;
+    opacity: 0.5;
+    transition: all 600ms ease-in-out;
+    transition-delay: 300ms;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.emotion-textbox-transform {
+    background-color: black;
+    opacity: 0.5;
+    transition: all 600ms ease-in-out;
+    transition-delay: 300ms;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.emotion-textbox:focus {
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+}
+
+.emotion-textbox-transform:focus {
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+    border: none;
+}
+
+.emotion-textbox:hover {
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.emotion-textbox-transform:hover {
+    opacity: 1;
+    transition: all 600ms ease-in-out;
+}
+
+.emotion-button {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.emotion-prediction {
+    z-index: 5;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.emotion-prediction-error {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-weight: 100;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 50px;
+    transition: all 500ms ease-in-out;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    visibility: hidden;
+}
+
+.emotion-graph {
+ 
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    gap: 20px;
+    cursor: default;
+    transition: all 500ms ease-in-out;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.emotion-bar {
+    background: rgba(0, 0, 0, 0.5);
+    border: black 2px solid;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 500ms ease-in-out; /* Smooth height changes */
+}
+
+.emotion-cell {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: end;
+    height: 500px;
+    width: 100px;
+}
+
+
