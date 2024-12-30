@@ -96,6 +96,11 @@ h1 {
     transition: all 600ms ease-in-out;
 }
 
+.emotion-button-flex {
+    display: flex;
+    gap: 20px;
+}
+
 .emotion-button {
     background-color: black;
     opacity: 0.5;
@@ -169,6 +174,55 @@ h1 {
     justify-content: end;
     height: 500px;
     width: 100px;
+}
+
+.emotion-samples {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    z-index: 9;
+    transition: all 300ms ease-in-out;
+    overflow-y: scroll;
+}
+
+.emotion-sample {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+.emotion-sample:hover {
+    font-size: 21px;
+    transition: all 200ms ease-in-out;
+}
+
+.emotion-close {
+    color: red;
+    font-weight: 100;
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 200ms ease-in-out;
+}
+
+.emotion-close:hover {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
 }
 
 @media (max-width: 480px) {
@@ -277,6 +331,45 @@ h1 {
     .emotion-made-by-transform {
         top: 10px;
         transition: all 500ms ease-in-out;
+    }
+    .emotion-samples {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        visibility: hidden;
+        z-index: 9;
+        transition: all 300ms ease-in-out;
+        overflow-y: scroll;
+    }
+    
+    .emotion-sample {
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 8px;
+        transition: all 200ms ease-in-out;
+    }
+    
+    .emotion-sample:hover {
+        font-size: 200px;
+        transition: all 200ms ease-in-out;
+        filter: blur(10px);
+    }
+    
+    .emotion-close {
+        color: red;
+        font-weight: 100;
+        cursor: pointer;
+        font-size: 40px;
+        transition: all 200ms ease-in-out;
     }
 }
 
