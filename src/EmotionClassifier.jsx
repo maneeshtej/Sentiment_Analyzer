@@ -12,32 +12,26 @@ function EmotionClassifier() {
   const [samplesOpen, setSamplesOpen] = useState(false);
   const sentimentSamples = [
     [
-      "I love spending time with my family.",
-      "They always make me feel supported.",
+      "I love spending time with my family. They always make me feel supported.",
     ], // Positive
     [
-      "The service at the restaurant was terrible.",
-      "I don’t think I’ll ever go back.",
+      "The service at the restaurant was terrible. I don’t think I’ll ever go back.",
     ], // Negative
     ["It’s a sunny day outside.", "I might take a walk later."], // Neutral
     [
-      "I’m so excited about the new movie release!",
-      "I’ve been waiting for it all year.",
+      "I’m so excited about the new movie release!, I’ve been waiting for it all year.",
     ], // Positive
     ["I’m disappointed with my test results.", "I thought I had done better."], // Negative
     ["The meeting went as expected.", "There were no major surprises."], // Neutral
     [
-      "Winning the competition felt amazing!",
-      "All the hard work finally paid off.",
+      "Winning the competition felt amazing!, All the hard work finally paid off.",
     ], // Positive
     [
-      "The traffic today is frustrating.",
-      "I’ve been stuck in the same spot for 20 minutes.",
+      "The traffic today is frustrating. I’ve been stuck in the same spot for 20 minutes.",
     ], // Negative
-    ["The book I’m reading is okay.", "It’s neither great nor terrible."], // Neutral
+    ["The book I’m reading is okay. It’s neither great nor terrible."], // Neutral
     [
-      "I’m thrilled to start my new job next week!",
-      "It’s a big step forward in my career.",
+      "I’m thrilled to start my new job next week!, It’s a big step forward in my career.",
     ], // Positive
   ];
 
@@ -69,7 +63,7 @@ function EmotionClassifier() {
 
     try {
       const response = await axios.post(
-        "https://17da-103-246-193-34.ngrok-free.app/predict",
+        "https://d038-103-246-193-34.ngrok-free.app/predict",
         {
           text: inputText,
         },
