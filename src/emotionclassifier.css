@@ -295,6 +295,27 @@ h1 {
         text-align: center;
         color: white;
     }
+    .emotion-textbox:focus {
+        opacity: 1;
+        transition: all 500ms ease-in-out;
+        border: none;
+    }
+    
+    .emotion-textbox-transform:focus {
+        opacity: 1;
+        transition: all 500ms ease-in-out;
+        border: none;
+    }
+    
+    .emotion-textbox:hover {
+        opacity: 1;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .emotion-textbox-transform:hover {
+        opacity: 1;
+        transition: all 600ms ease-in-out;
+    }
 
     .emotion-prediction {
         z-index: 5;
