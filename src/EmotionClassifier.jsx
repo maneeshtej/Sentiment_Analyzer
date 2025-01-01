@@ -63,7 +63,7 @@ function EmotionClassifier() {
 
     try {
       const response = await axios.post(
-        "https://d038-103-246-193-34.ngrok-free.app/predict",
+        " https://ffba-103-246-193-34.ngrok-free.app/predict",
         {
           text: inputText,
         },
@@ -91,7 +91,13 @@ function EmotionClassifier() {
           !buttonPress ? " " : "emotion-main-wrapper-transform"
         }`}
       >
-        <h1>Emotion Classifier</h1>
+        <h1
+          onClick={() => {
+            setButtonPress(false);
+          }}
+        >
+          Emotion Classifier
+        </h1>
         <textarea
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
@@ -173,6 +179,9 @@ function EmotionClassifier() {
         style={{
           visibility: `${samplesOpen ? "visible" : "hidden"}`,
           opacity: `${samplesOpen ? "1" : "0"}`,
+        }}
+        onClick={() => {
+          setSamplesOpen(false);
         }}
       >
         <div
