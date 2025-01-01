@@ -142,6 +142,9 @@ function EmotionClassifier() {
           opacity: `${error ? "1" : "0"}`,
           visibility: `${error ? "visible" : "hidden"}`,
         }}
+        onClick={() => {
+          setError(null);
+        }}
       >
         {error.toUpperCase()}
       </div>
