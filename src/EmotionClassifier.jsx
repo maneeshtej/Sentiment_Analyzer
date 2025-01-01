@@ -146,7 +146,7 @@ function EmotionClassifier() {
           setError(null);
         }}
       >
-        {error.toUpperCase()}
+        {error ? error.toUpperCase() : ""}
       </div>
       {buttonPress && (
         <div className="emotion-prediction">
